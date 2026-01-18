@@ -1,29 +1,3 @@
-"""
-THE FOUR-WING 2-MORPHISM Φ: CORRECTED VERSION
-==============================================
-
-CORRECTIONS:
-1. Wings constructed from ACTUAL Dec(10,22) topology
-2. Proper trace removal: 9 → 8 generators for SU(3)
-3. Coherence constraints enforced geometrically
-4. JSON serialization fix
-
-Key insight: The 4 wings must respect the graph structure:
-- α+: Acts on Type-B (sequential) morphisms
-- α-: Acts on Type-D (control) morphisms  
-- β↑: Connects Type-A (bifurcation) to Type-B
-- β↓: Adjoint of β↑ with quantum residue
-
-Author: Jean da Cunha
-Date: 2025-01-18 (corrected)
-"""
-
-import numpy as np
-from scipy import linalg
-import json
-
-PHI = (1 + np.sqrt(5)) / 2
-QUANTUM_RESIDUE = 1.0 - 1.0/PHI  # ≈ 0.382
 
 print("""
 ╔══════════════════════════════════════════════════════════════════════╗
